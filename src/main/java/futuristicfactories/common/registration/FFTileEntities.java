@@ -15,4 +15,9 @@ public class FFTileEntities implements IFFRegistry<TileEntityType<?>> {
     public void register(IForgeRegistry<TileEntityType<?>> registry) {
 
     }
+
+    @Override
+    public void init() {
+
+    }
 }

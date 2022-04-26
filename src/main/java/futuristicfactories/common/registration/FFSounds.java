@@ -14,4 +14,9 @@ public class FFSounds implements IFFRegistry<SoundEvent> {
     public void register(IForgeRegistry<SoundEvent> registry) {
 
     }
+
+    @Override
+    public void init() {
+
+    }
 }

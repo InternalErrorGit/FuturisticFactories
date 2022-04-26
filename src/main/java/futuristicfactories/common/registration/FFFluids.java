@@ -14,4 +14,9 @@ public class FFFluids implements IFFRegistry<Fluid> {
     public void register(IForgeRegistry<Fluid> registry) {
 
     }
+
+    @Override
+    public void init() {
+
+    }
 }

@@ -14,4 +14,9 @@ public class FFEnchantments implements IFFRegistry<Enchantment> {
     public void register(IForgeRegistry<Enchantment> registry) {
 
     }
+
+    @Override
+    public void init() {
+
+    }
 }
