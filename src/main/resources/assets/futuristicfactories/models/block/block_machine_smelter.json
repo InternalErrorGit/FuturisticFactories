@@ -1,0 +1,12 @@
+{
+  "parent": "futuristicfactories:block/block_machine",
+  "textures": {
+    "sides": "futuristicfactories:block/machine_smelter/side",
+    "front": "futuristicfactories:block/machine_smelter/front",
+    "west": "futuristicfactories:block/machine_smelter/side",
+    "east": "futuristicfactories:block/machine_smelter/side",
+    "south": "futuristicfactories:block/machine_smelter/back",
+    "up": "futuristicfactories:block/machine_smelter/top",
+    "down": "futuristicfactories:block/machine_smelter/bottom"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "futuristicfactories:item_ingot_lead"
+    }
+  ],
+  "result": {
+    "item": "futuristicfactories:item_nugget_lead",
+    "count": 9
+  }
+}

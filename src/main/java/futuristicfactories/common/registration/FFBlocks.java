@@ -14,7 +14,8 @@ import static futuristicfactories.FuturisticFactories.MODID;
 @ObjectHolder(MODID)
 public class FFBlocks implements IFFRegistry<Block> {
     private static final Logger LOGGER = LogManager.getLogger();
-
+    @ObjectHolder(BLOCK_ORE_ALUMINUM)
+    public static Block blockOreAluminum;
     @ObjectHolder(BLOCK_ORE_COPPER)
     public static Block blockOreCopper;
     @ObjectHolder(BLOCK_ORE_LEAD)
@@ -27,6 +28,8 @@ public class FFBlocks implements IFFRegistry<Block> {
     public static Block blockOreTin;
     @ObjectHolder(BLOCK_COPPER)
     public static Block blockCopper;
+    @ObjectHolder(BLOCK_ALUMINUM)
+    public static Block blockAluminum;
     @ObjectHolder(BLOCK_LEAD)
     public static Block blockLead;
     @ObjectHolder(BLOCK_NICKEL)
@@ -37,21 +40,29 @@ public class FFBlocks implements IFFRegistry<Block> {
     public static Block blockTin;
 
 
+    @ObjectHolder(BLOCK_MACHINE_SMELTER)
+    public static Block blockMachineSmelter;
+
+
+
     @Override
     public void init() {
         LOGGER.info("Initializing blocks");
 
+        blockOreAluminum = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_ORE_ALUMINUM)).setRegistryName(BLOCK_ORE_ALUMINUM);
         blockOreCopper = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_ORE_COPPER)).setRegistryName(BLOCK_ORE_COPPER);
         blockOrLead = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_ORE_LEAD)).setRegistryName(BLOCK_ORE_LEAD);
         blockOreNickel = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_ORE_NICKEL)).setRegistryName(BLOCK_ORE_NICKEL);
         blockOreSilver = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_ORE_SILVER)).setRegistryName(BLOCK_ORE_SILVER);
         blockOreTin = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_ORE_TIN)).setRegistryName(BLOCK_ORE_TIN);
+        blockAluminum = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_ALUMINUM)).setRegistryName(BLOCK_ALUMINUM);
         blockCopper = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_COPPER)).setRegistryName(BLOCK_COPPER);
         blockLead = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_LEAD)).setRegistryName(BLOCK_LEAD);
         blockNickel = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_NICKEL)).setRegistryName(BLOCK_NICKEL);
         blockSilver = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_SILVER)).setRegistryName(BLOCK_SILVER);
         blockTin = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_TIN)).setRegistryName(BLOCK_TIN);
 
+        blockMachineSmelter = new Block(AbstractBlock.Properties.create(IFFMaterial.MATERIAL_BLOCK_MACHINE_SMELTER)).setRegistryName(BLOCK_MACHINE_SMELTER);
 
         LOGGER.info("Initializing blocks done");
     }
@@ -61,16 +72,20 @@ public class FFBlocks implements IFFRegistry<Block> {
         init();
         LOGGER.info("Registering blocks");
 
+        registry.register(blockOreAluminum);
         registry.register(blockOreCopper);
         registry.register(blockOrLead);
         registry.register(blockOreNickel);
         registry.register(blockOreSilver);
         registry.register(blockOreTin);
+        registry.register(blockAluminum);
         registry.register(blockCopper);
         registry.register(blockLead);
         registry.register(blockNickel);
         registry.register(blockSilver);
         registry.register(blockTin);
+
+        registry.register(blockMachineSmelter);
 
         LOGGER.info("Registering blocks done");
     }

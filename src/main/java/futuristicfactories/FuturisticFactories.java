@@ -4,6 +4,7 @@ import futuristicfactories.client.ClientProxy;
 import futuristicfactories.common.ServerProxy;
 import futuristicfactories.common.data.FFLoot;
 import futuristicfactories.common.data.FFRecipes;
+import futuristicfactories.common.generation.WorldGeneration;
 import futuristicfactories.common.registration.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -16,11 +17,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -46,15 +51,29 @@ public class FuturisticFactories {
         return new ResourceLocation(MODID, path);
     }
 
-    public static final ItemGroup FUTURISTIC_FACTORIES_TAB = new ItemGroup(MODID) {
+    public static final ItemGroup FUTURISTIC_FACTORIES_TAB_MATERIALS = new ItemGroup(MODID) {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(Blocks.DIRT);
+            return new ItemStack(FFBlocks.blockOreCopper);
+        }
+    };
+
+    public static final ItemGroup FUTURISTIC_FACTORIES_TAB_MACHINES = new ItemGroup(MODID) {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(FFBlocks.blockMachineSmelter);
         }
     };
 
     public FuturisticFactories() {
         PROXY.eventInit();
+
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+
+    }
+
+    private void setup(final FMLCommonSetupEvent event) {
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, WorldGeneration::generateOre);
     }
 
     @SubscribeEvent

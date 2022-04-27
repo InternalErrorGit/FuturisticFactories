@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "futuristicfactories:item_block_nickel"
+    }
+  ],
+  "result": {
+    "item": "futuristicfactories:item_ingot_nickel",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "futuristicfactories:item_block_aluminum"
+    }
+  ],
+  "result": {
+    "item": "futuristicfactories:item_ingot_aluminum",
+    "count": 9
+  }
+}

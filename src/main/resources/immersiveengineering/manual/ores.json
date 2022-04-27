@@ -1,0 +1,68 @@
+{
+  "copper": {
+    "type": "item_display",
+    "items": [
+      {
+        "item": "immersiveengineering:ore_copper"
+      },
+      {
+        "item": "immersiveengineering:ingot_copper"
+      }
+    ]
+  },
+  "alu": {
+    "type": "item_display",
+    "items": [
+      {
+        "item": "immersiveengineering:ore_aluminum"
+      },
+      {
+        "item": "immersiveengineering:ingot_aluminum"
+      }
+    ]
+  },
+  "lead": {
+    "type": "item_display",
+    "items": [
+      {
+        "item": "immersiveengineering:ore_lead"
+      },
+      {
+        "item": "immersiveengineering:ingot_lead"
+      }
+    ]
+  },
+  "silver": {
+    "type": "item_display",
+    "items": [
+      {
+        "item": "immersiveengineering:ore_silver"
+      },
+      {
+        "item": "immersiveengineering:ingot_silver"
+      }
+    ]
+  },
+  "nickel": {
+    "type": "item_display",
+    "items": [
+      {
+        "item": "immersiveengineering:ore_nickel"
+      },
+      {
+        "item": "immersiveengineering:ingot_nickel"
+      }
+    ]
+  },
+  "uranium": {
+    "type": "item_display",
+    "items": [
+      {
+        "item": "immersiveengineering:ore_uranium"
+      },
+      {
+        "item": "immersiveengineering:ingot_uranium"
+      }
+    ]
+  }
+}

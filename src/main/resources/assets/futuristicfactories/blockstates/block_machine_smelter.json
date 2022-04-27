@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "futuristicfactories:block/block_machine_smelter"
+    },
+    "active=false": {
+      "model": "futuristicfactories:block/block_machine_smelter",
+      "y": 180
+    },
+    "active=false": {
+      "model": "futuristicfactories:block/block_machine_smelter",
+      "y": 90
+    },
+    "active=false": {
+      "model": "futuristicfactories:block/block_machine_smelter",
+      "y": -90
+    },
+    "active=true": {
+      "model": "futuristicfactories:block/block_machine_smelter"
+    },
+    "active=true": {
+      "model": "futuristicfactories:block/block_machine_smelter",
+      "y": 180
+    },
+    "active=true": {
+      "model": "futuristicfactories:block/block_machine_smelter",
+      "y": 90
+    },
+    "active=true": {
+      "model": "futuristicfactories:block/block_machine_smelter",
+      "y": -90
+    }
+  }
+}

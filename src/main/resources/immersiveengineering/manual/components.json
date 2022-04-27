@@ -1,0 +1,44 @@
+{
+    "start": {
+        "type": "crafting",
+        "recipes": [
+            [
+                {
+                    "recipe": "crafting/component_iron"
+                },
+                {
+                    "recipe": "crafting/component_steel"
+                }
+            ]
+        ]
+    },
+    "create_bp": {
+        "type": "crafting",
+        "recipe": "crafting/blueprint_components"
+    },
+    "mech_components": {
+        "type": "blueprint",
+        "recipes": [
+            {
+                "item": "immersiveengineering:component_iron"
+            },
+            {
+                "item": "immersiveengineering:component_steel"
+            }
+        ]
+    },
+    "tubes": {
+        "type": "blueprint",
+        "recipes": [
+            {
+                "item": "immersiveengineering:electron_tube"
+            }
+        ]
+    },
+    "pcb": {
+        "type": "blueprint",
+        "recipe": {
+            "item": "immersiveengineering:circuit_board"
+        }
+    }
+}
