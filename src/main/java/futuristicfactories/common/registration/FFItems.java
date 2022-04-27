@@ -1,6 +1,5 @@
 package futuristicfactories.common.registration;
 
-import futuristicfactories.FuturisticFactories;
 import futuristicfactories.common.registry.IFFRegistry;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -16,47 +15,73 @@ import static futuristicfactories.FuturisticFactories.MODID;
 public class FFItems implements IFFRegistry<Item> {
 
     private static final Logger LOGGER = LogManager.getLogger();
-    @ObjectHolder(BLOCK_ORE_COPPER)
+    @ObjectHolder(ITEM_BLOCK_ORE_COPPER)
     public static BlockItem itemBlockOreCopper;
-    @ObjectHolder(BLOCK_ORE_TIN)
-    public static BlockItem itemBlockOreTin;
-    @ObjectHolder(BLOCK_ORE_OSMIUM)
-    public static BlockItem itemBlockOreOsmium;
-    @ObjectHolder(BLOCK_ORE_LEAD)
+    @ObjectHolder(ITEM_BLOCK_ORE_LEAD)
     public static BlockItem itemBlockOreLead;
-    @ObjectHolder(BLOCK_COPPER)
+    @ObjectHolder(ITEM_BLOCK_ORE_NICKEL)
+    public static BlockItem itemBlockOreNickel;
+    @ObjectHolder(ITEM_BLOCK_ORE_SILVER)
+    public static BlockItem itemBlockOreSilver;
+    @ObjectHolder(ITEM_BLOCK_ORE_TIN)
+    public static BlockItem itemBlockOreTin;
+    @ObjectHolder(ITEM_BLOCK_COPPER)
     public static BlockItem itemBlockCopper;
-    @ObjectHolder(BLOCK_TIN)
-    public static BlockItem itemBlockTin;
-    @ObjectHolder(BLOCK_OSMIUM)
-    public static BlockItem itemBlockOsmium;
-    @ObjectHolder(BLOCK_LEAD)
+    @ObjectHolder(ITEM_BLOCK_LEAD)
     public static BlockItem itemBlockLead;
+    @ObjectHolder(ITEM_BLOCK_NICKEL)
+    public static BlockItem itemBlockNickel;
+    @ObjectHolder(ITEM_BLOCK_SILVER)
+    public static BlockItem itemBlockSilver;
+    @ObjectHolder(ITEM_BLOCK_TIN)
+    public static BlockItem itemBlockTin;
+    @ObjectHolder(ITEM_NUGGET_COPPER)
+    public static Item itemNuggetCopper;
+    @ObjectHolder(ITEM_NUGGET_LEAD)
+    public static Item itemNuggetLead;
+    @ObjectHolder(ITEM_NUGGET_NICKEL)
+    public static Item itemNuggetNickel;
+    @ObjectHolder(ITEM_NUGGET_SILVER)
+    public static Item itemNuggetSilver;
+    @ObjectHolder(ITEM_NUGGET_TIN)
+    public static Item itemNuggetTin;
     @ObjectHolder(ITEM_INGOT_COPPER)
     public static Item itemIngotCopper;
-    @ObjectHolder(ITEM_INGOT_TIN)
-    public static Item itemIngotTin;
-    @ObjectHolder(ITEM_INGOT_OSMIUM)
-    public static Item itemIngotOsmium;
     @ObjectHolder(ITEM_INGOT_LEAD)
     public static Item itemIngotLead;
+    @ObjectHolder(ITEM_INGOT_NICKEL)
+    public static Item itemIngotNickel;
+    @ObjectHolder(ITEM_INGOT_SILVER)
+    public static Item itemIngotSilver;
+    @ObjectHolder(ITEM_INGOT_TIN)
+    public static Item itemIngotTin;
 
 
     @Override
     public void init() {
         LOGGER.info("Initializing items");
-        itemBlockOreCopper = new BlockItem(FFBlocks.blockOreCopper, new Item.Properties().group(FuturisticFactories.FUTURISTIC_FACTORIES_TAB));
-        itemBlockOreTin = new BlockItem(FFBlocks.blockOreTin, new Item.Properties().group(FuturisticFactories.FUTURISTIC_FACTORIES_TAB));
-        itemBlockOreOsmium = new BlockItem(FFBlocks.blockOreOsmium, new Item.Properties().group(FuturisticFactories.FUTURISTIC_FACTORIES_TAB));
-        itemBlockOreLead = new BlockItem(FFBlocks.blockOreLead, new Item.Properties().group(FuturisticFactories.FUTURISTIC_FACTORIES_TAB));
-        itemBlockCopper = new BlockItem(FFBlocks.blockCopper, new Item.Properties().group(FuturisticFactories.FUTURISTIC_FACTORIES_TAB));
-        itemBlockTin = new BlockItem(FFBlocks.blockTin, new Item.Properties().group(FuturisticFactories.FUTURISTIC_FACTORIES_TAB));
-        itemBlockOsmium = new BlockItem(FFBlocks.blockOsmium, new Item.Properties().group(FuturisticFactories.FUTURISTIC_FACTORIES_TAB));
-        itemBlockLead = new BlockItem(FFBlocks.blockLead, new Item.Properties().group(FuturisticFactories.FUTURISTIC_FACTORIES_TAB));
+
+        itemBlockOreCopper = new BlockItem(FFBlocks.blockOreCopper, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockOreLead = new BlockItem(FFBlocks.blockOrLead, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockOreNickel = new BlockItem(FFBlocks.blockOreNickel, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockOreSilver = new BlockItem(FFBlocks.blockOreSilver, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockOreTin = new BlockItem(FFBlocks.blockOreTin, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockCopper = new BlockItem(FFBlocks.blockCopper, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockLead = new BlockItem(FFBlocks.blockLead, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockNickel = new BlockItem(FFBlocks.blockNickel, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockSilver = new BlockItem(FFBlocks.blockSilver, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemBlockTin = new BlockItem(FFBlocks.blockTin, new Item.Properties().group(FUTURISTIC_FACTORIES_TAB));
+        itemNuggetCopper = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_NUGGET_COPPER);
+        itemNuggetLead = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_NUGGET_LEAD);
+        itemNuggetNickel = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_NUGGET_NICKEL);
+        itemNuggetSilver = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_NUGGET_SILVER);
+        itemNuggetTin = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_NUGGET_TIN);
         itemIngotCopper = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_INGOT_COPPER);
-        itemIngotTin = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_INGOT_TIN);
-        itemIngotOsmium = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_INGOT_OSMIUM);
         itemIngotLead = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_INGOT_LEAD);
+        itemIngotNickel = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_INGOT_NICKEL);
+        itemIngotSilver = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_INGOT_SILVER);
+        itemIngotTin = new Item(new Item.Properties().group(FUTURISTIC_FACTORIES_TAB)).setRegistryName(ITEM_INGOT_TIN);
+
         LOGGER.info("Initializing items done");
     }
 
@@ -64,18 +89,29 @@ public class FFItems implements IFFRegistry<Item> {
     public void register(IForgeRegistry<Item> registry) {
         init();
         LOGGER.info("Registering items");
+
         registry.register(itemBlockOreCopper.setRegistryName(ITEM_BLOCK_ORE_COPPER));
-        registry.register(itemBlockOreTin.setRegistryName(ITEM_BLOCK_ORE_TIN));
-        registry.register(itemBlockOreOsmium.setRegistryName(ITEM_BLOCK_ORE_OSMIUM));
         registry.register(itemBlockOreLead.setRegistryName(ITEM_BLOCK_ORE_LEAD));
+        registry.register(itemBlockOreNickel.setRegistryName(ITEM_BLOCK_ORE_NICKEL));
+        registry.register(itemBlockOreSilver.setRegistryName(ITEM_BLOCK_ORE_SILVER));
+        registry.register(itemBlockOreTin.setRegistryName(ITEM_BLOCK_ORE_TIN));
         registry.register(itemBlockCopper.setRegistryName(ITEM_BLOCK_COPPER));
-        registry.register(itemBlockTin.setRegistryName(ITEM_BLOCK_TIN));
-        registry.register(itemBlockOsmium.setRegistryName(ITEM_BLOCK_OSMIUM));
         registry.register(itemBlockLead.setRegistryName(ITEM_BLOCK_LEAD));
+        registry.register(itemBlockNickel.setRegistryName(ITEM_BLOCK_NICKEL));
+        registry.register(itemBlockSilver.setRegistryName(ITEM_BLOCK_SILVER));
+        registry.register(itemBlockTin.setRegistryName(ITEM_BLOCK_TIN));
+        registry.register(itemNuggetCopper);
+        registry.register(itemNuggetLead);
+        registry.register(itemNuggetNickel);
+        registry.register(itemNuggetSilver);
+        registry.register(itemNuggetTin);
         registry.register(itemIngotCopper);
-        registry.register(itemIngotTin);
-        registry.register(itemIngotOsmium);
         registry.register(itemIngotLead);
+        registry.register(itemIngotNickel);
+        registry.register(itemIngotSilver);
+        registry.register(itemIngotTin);
+
+
         LOGGER.info("Registering items done");
     }
 

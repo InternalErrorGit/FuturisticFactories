@@ -1,0 +1,6 @@
+{
+  "parent": "futuristicfactories:block/basic_cube",
+  "textures": {
+    "all": "futuristicfactories:block/block_ore_osmium"
+  }
+}

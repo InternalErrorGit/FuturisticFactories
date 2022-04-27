@@ -15,13 +15,17 @@ public class FFBlockLoot extends BlockLootTables {
     @Override
     protected void addTables() {
         registerDropSelfLootTable(FFBlocks.blockOreCopper);
+        registerDropSelfLootTable(FFBlocks.blockOrLead);
+        registerDropSelfLootTable(FFBlocks.blockOreNickel);
+        registerDropSelfLootTable(FFBlocks.blockOreSilver);
         registerDropSelfLootTable(FFBlocks.blockOreTin);
-        registerDropSelfLootTable(FFBlocks.blockOreOsmium);
-        registerDropSelfLootTable(FFBlocks.blockOreLead);
         registerDropSelfLootTable(FFBlocks.blockCopper);
-        registerDropSelfLootTable(FFBlocks.blockTin);
-        registerDropSelfLootTable(FFBlocks.blockOsmium);
         registerDropSelfLootTable(FFBlocks.blockLead);
+        registerDropSelfLootTable(FFBlocks.blockNickel);
+        registerDropSelfLootTable(FFBlocks.blockSilver);
+        registerDropSelfLootTable(FFBlocks.blockTin);
+
+
     }
 
     @Override
