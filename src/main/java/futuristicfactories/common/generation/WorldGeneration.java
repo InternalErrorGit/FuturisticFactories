@@ -1,6 +1,6 @@
 package futuristicfactories.common.generation;
 
-import futuristicfactories.common.registration.FFBlocks;
+import futuristicfactories.common.registry.FFBlockRegistry;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
@@ -17,54 +17,66 @@ public class WorldGeneration {
     static {
         ores = new ArrayList<>();
 
-        ores.add(Feature.ORE.withConfiguration(
-                        new OreFeatureConfig(
-                                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-                                FFBlocks.blockOreAluminum.getDefaultState(),
-                                5)
-                ).range(64).square().count(5)
+        ores.add(
+                Feature.ORE.withConfiguration(
+                                new OreFeatureConfig(
+                                        OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
+                                        FFBlockRegistry.ALUMINUM_ORE.get().getDefaultState(),
+                                        5))
+                        .range(64)
+                        .square()
+                        .count(5)
         );
-
-        ores.add(Feature.ORE.withConfiguration(
-                        new OreFeatureConfig(
-                                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-                                FFBlocks.blockOreCopper.getDefaultState(),
-                                5)
-                ).range(64).square().count(5)
+        ores.add(
+                Feature.ORE.withConfiguration(
+                                new OreFeatureConfig(
+                                        OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
+                                        FFBlockRegistry.COPPER_ORE.get().getDefaultState(),
+                                        5))
+                        .range(64)
+                        .square()
+                        .count(5)
         );
-
-        ores.add(Feature.ORE.withConfiguration(
-                        new OreFeatureConfig(
-                                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-                                FFBlocks.blockOrLead.getDefaultState(),
-                                5)
-                ).range(64).square().count(5)
+        ores.add(
+                Feature.ORE.withConfiguration(
+                                new OreFeatureConfig(
+                                        OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
+                                        FFBlockRegistry.LEAD_ORE.get().getDefaultState(),
+                                        5))
+                        .range(64)
+                        .square()
+                        .count(5)
         );
-
-        ores.add(Feature.ORE.withConfiguration(
-                        new OreFeatureConfig(
-                                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-                                FFBlocks.blockOreNickel.getDefaultState(),
-                                5)
-                ).range(64).square().count(5)
+        ores.add(
+                Feature.ORE.withConfiguration(
+                                new OreFeatureConfig(
+                                        OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
+                                        FFBlockRegistry.NICKEL_ORE.get().getDefaultState(),
+                                        5))
+                        .range(64)
+                        .square()
+                        .count(5)
         );
-
-        ores.add(Feature.ORE.withConfiguration(
-                        new OreFeatureConfig(
-                                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-                                FFBlocks.blockOreSilver.getDefaultState(),
-                                5)
-                ).range(64).square().count(5)
+        ores.add(
+                Feature.ORE.withConfiguration(
+                                new OreFeatureConfig(
+                                        OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
+                                        FFBlockRegistry.SILVER_ORE.get().getDefaultState(),
+                                        5))
+                        .range(64)
+                        .square()
+                        .count(5)
         );
-
-        ores.add(Feature.ORE.withConfiguration(
-                        new OreFeatureConfig(
-                                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-                                FFBlocks.blockOreTin.getDefaultState(),
-                                8)
-                ).range(64).square().count(6)
+        ores.add(
+                Feature.ORE.withConfiguration(
+                                new OreFeatureConfig(
+                                        OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
+                                        FFBlockRegistry.TIN_ORE.get().getDefaultState(),
+                                        5))
+                        .range(64)
+                        .square()
+                        .count(5)
         );
-
 
     }
 

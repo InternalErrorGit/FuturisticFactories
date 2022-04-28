@@ -1,7 +1,0 @@
-{
-  "parent": "futuristicfactories:block/block_machine_smelter",
-  "textures": {
-    "front": "futuristicfactories:block/block_machine_smelter/front_active",
-    "down": "futuristicfactories:block/block_machine_smelter/bottom_active"
-  }
-}

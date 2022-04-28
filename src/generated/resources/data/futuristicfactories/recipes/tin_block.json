@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "futuristicfactories:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "futuristicfactories:tin_block"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "futuristicfactories:aluminum_ingot"
+    }
+  },
+  "result": {
+    "item": "futuristicfactories:aluminum_block"
+  }
+}

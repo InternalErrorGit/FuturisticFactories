@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "futuristicfactories:copper_block"
+    }
+  ],
+  "result": {
+    "item": "futuristicfactories:copper_ingot",
+    "count": 9
+  }
+}

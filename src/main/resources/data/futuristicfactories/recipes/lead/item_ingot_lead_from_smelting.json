@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "futuristicfactories:item_block_ore_lead"
-  },
-  "result": "futuristicfactories:item_ingot_lead",
-  "experience": 0.2,
-  "cookingtime": 200
-}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "futuristicfactories:nickel_ingot"
+    }
+  },
+  "result": {
+    "item": "futuristicfactories:nickel_block"
+  }
+}

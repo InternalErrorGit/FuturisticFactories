@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "futuristicfactories:aluminum_block"
+  },
+  "result": "futuristicfactories:aluminum_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

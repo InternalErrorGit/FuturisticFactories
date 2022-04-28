@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "futuristicfactories:item_block_ore_silver"
-  },
-  "result": "futuristicfactories:item_ingot_silver",
-  "experience": 0.2,
-  "cookingtime": 200
-}
