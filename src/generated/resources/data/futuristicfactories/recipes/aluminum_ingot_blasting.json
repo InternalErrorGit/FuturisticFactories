@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "item": "futuristicfactories:aluminum_block"
+    "item": "futuristicfactories:aluminum_ore"
   },
   "result": "futuristicfactories:aluminum_ingot",
   "experience": 0.7,

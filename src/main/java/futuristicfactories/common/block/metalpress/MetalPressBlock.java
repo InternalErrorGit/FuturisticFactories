@@ -1,5 +1,6 @@
 package futuristicfactories.common.block.metalpress;
 
+import futuristicfactories.FuturisticFactories;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
@@ -46,7 +47,8 @@ public class MetalPressBlock extends Block {
     @SuppressWarnings("deprecation")
     @Override
     public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult rayTrace) {
-        if (world.isRemote) {
+        FuturisticFactories.logger.debug("Hello im a metal press");
+        if (!world.isRemote) {
             this.interactWith(world, pos, player);
         }
         return ActionResultType.SUCCESS;

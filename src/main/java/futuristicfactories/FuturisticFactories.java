@@ -9,12 +9,15 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.fml.common.Mod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod(FuturisticFactories.MOD_ID)
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FuturisticFactories {
     public static final String MOD_ID = "futuristicfactories";
 
+    public static final Logger logger = LogManager.getLogger(MOD_ID);
 
     public static ResourceLocation location(String path) {
         return new ResourceLocation(MOD_ID, path);

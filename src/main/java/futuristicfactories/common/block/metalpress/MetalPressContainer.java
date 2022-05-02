@@ -23,14 +23,14 @@ public class MetalPressContainer extends Container {
         this(id,playerInventory,new MetalPressTileEntity(), new IntArray(buffer.readByte()));
     }
 
-    private MetalPressContainer(int id, PlayerInventory playerInventory, IInventory inventory, IIntArray fields) {
+    public MetalPressContainer(int id, PlayerInventory playerInventory, IInventory inventory, IIntArray fields) {
         super(FFContainerTypeRegistry.METAL_PRESS.get(), id);
 
         this.inventory = inventory;
         this.fields = fields;
 
         addSlot(new Slot(this.inventory, 0, 56, 35));
-        addSlot(new Slot(this.inventory, 1, 117, 35) {
+        addSlot(new Slot(this.inventory, 1, 116, 35) {
             @Override
             public boolean isItemValid(ItemStack stack) {
                 return false;
@@ -42,7 +42,7 @@ public class MetalPressContainer extends Container {
                 int index = x + y * 9;
                 int posX = 8 + x * 18;
                 int posY = 84 + y * 18;
-                addSlot(new Slot(playerInventory, index, posX, posY));
+                addSlot(new Slot(playerInventory, index + 9, posX, posY));
             }
         }
         for (int x = 0; x < 9; x++) {

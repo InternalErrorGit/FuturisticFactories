@@ -33,6 +33,8 @@ public class FFItemModelProvider extends ItemModelProvider implements IFFRegistr
         withExistingParent(REGISTRY_NAME_SILVER_BLOCK, modBlockLoc(REGISTRY_NAME_SILVER_BLOCK));
         withExistingParent(REGISTRY_NAME_TIN_BLOCK, modBlockLoc(REGISTRY_NAME_TIN_BLOCK));
 
+        withExistingParent(REGISTRY_NAME_METAL_PRESS, modBlockLoc(REGISTRY_NAME_METAL_PRESS));
+
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
         builder(itemGenerated, REGISTRY_NAME_ALUMINUM_INGOT);
@@ -48,6 +50,7 @@ public class FFItemModelProvider extends ItemModelProvider implements IFFRegistr
         builder(itemGenerated, REGISTRY_NAME_NICKEL_NUGGET);
         builder(itemGenerated, REGISTRY_NAME_SILVER_NUGGET);
         builder(itemGenerated, REGISTRY_NAME_TIN_NUGGET);
+
     }
 
     private ResourceLocation modBlockLoc(String block) {

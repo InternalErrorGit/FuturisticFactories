@@ -19,9 +19,9 @@ public class MetalPressScreen extends ContainerScreen<MetalPressContainer> {
 
     @Override
     public void render(MatrixStack matrixStack, int x, int y, float partialTicks) {
-        renderBackground(matrixStack);
+        this.renderBackground(matrixStack);
         super.render(matrixStack, x, y, partialTicks);
-        renderHoveredTooltip(matrixStack, x, y);
+        this.renderHoveredTooltip(matrixStack, x, y);
     }
 
     @Override
@@ -31,13 +31,27 @@ public class MetalPressScreen extends ContainerScreen<MetalPressContainer> {
 
 
         RenderSystem.color4f(1, 1, 1, 1);
+        RenderSystem.enableBlend();
+        RenderSystem.defaultBlendFunc();
         minecraft.getTextureManager().bindTexture(TEXTURE);
-
-        int posX = (width - xSize) / 2;
-        int posY = (height - ySize) / 2;
-
-        blit(matrixStack, posX, posY, 0, 0, width, height);
+        int posX = (this.width - this.xSize) / 2;
+        int posY = (this.height - this.ySize) / 2;
+        blit(matrixStack, posX, posY, 0, 0, this.xSize, this.ySize);
+        RenderSystem.disableBlend();
 
         blit(matrixStack, posX + 79, posY + 35, 176, 14, container.getProgressArrowScale() + 1, 16);
+
+
+    //    RenderSystem.color4f(1, 1, 1, 1);
+    //    minecraft.getTextureManager().bindTexture(TEXTURE);
+//
+    //    int posX = (width - xSize) / 2;
+    //    int posY = (height - ySize) / 2;
+//
+    //    blit(matrixStack, posX, posY, 0, 0, width, height);
+//
+    //    RenderSystem.disableBlend();
+    //    //blit(matrixStack, posX + 79, posY + 35, 176, 14, container.getProgressArrowScale() + 1, 16);
     }
+
 }

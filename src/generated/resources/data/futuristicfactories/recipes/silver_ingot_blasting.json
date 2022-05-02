@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "item": "futuristicfactories:silver_block"
+    "item": "futuristicfactories:silver_ore"
   },
   "result": "futuristicfactories:silver_ingot",
   "experience": 0.7,

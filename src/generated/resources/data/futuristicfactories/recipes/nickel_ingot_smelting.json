@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "futuristicfactories:nickel_block"
+    "item": "futuristicfactories:nickel_ore"
   },
   "result": "futuristicfactories:nickel_ingot",
   "experience": 0.7,

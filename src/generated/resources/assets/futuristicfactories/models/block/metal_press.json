@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "side": "futuristicfactories:block/metal_press_side",
+    "front": "futuristicfactories:block/metal_press_side",
+    "top": "futuristicfactories:block/metal_press_top"
+  }
+}

@@ -3,11 +3,13 @@ package futuristicfactories.common.data.recipe;
 import futuristicfactories.FuturisticFactories;
 import futuristicfactories.common.registry.FFBlockRegistry;
 import futuristicfactories.common.registry.FFItemsRegistry;
+import futuristicfactories.common.registry.FFRecipes;
 import futuristicfactories.common.registry.IFFRegistryNames;
 import net.minecraft.block.Block;
 import net.minecraft.data.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.crafting.SingleItemRecipe;
 
 import java.util.function.Consumer;
 
@@ -34,10 +36,11 @@ public class FFRecipeProvider extends RecipeProvider implements IFFRegistryNames
 
         ShapedRecipeBuilder.shapedRecipe(block).key('i', ingot).patternLine("iii").patternLine("iii").patternLine("iii").addCriterion("has_item", hasItem(ingot)).build(consumer);
 
-        CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(block), ingot, 0.7f, 200).addCriterion("has_item", hasItem(ore)).build(consumer, FuturisticFactories.location(ingotRegistryName + "_smelting"));
-        CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(block), ingot, 0.7f, 100).addCriterion("has_item", hasItem(ore)).build(consumer, FuturisticFactories.location(ingotRegistryName + "_blasting"));
+        CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ore), ingot, 0.7f, 200).addCriterion("has_item", hasItem(ore)).build(consumer, FuturisticFactories.location(ingotRegistryName + "_smelting"));
+        CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ore), ingot, 0.7f, 100).addCriterion("has_item", hasItem(ore)).build(consumer, FuturisticFactories.location(ingotRegistryName + "_blasting"));
 
 
     }
+
 
 }

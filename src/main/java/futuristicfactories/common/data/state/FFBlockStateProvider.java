@@ -1,13 +1,16 @@
 package futuristicfactories.common.data.state;
 
+import futuristicfactories.FuturisticFactories;
 import futuristicfactories.common.registry.FFBlockRegistry;
+import futuristicfactories.common.registry.IFFRegistryNames;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import static futuristicfactories.FuturisticFactories.MOD_ID;
 
-public class FFBlockStateProvider extends BlockStateProvider {
+public class FFBlockStateProvider extends BlockStateProvider implements IFFRegistryNames {
     public FFBlockStateProvider(DataGenerator gen, ExistingFileHelper exFileHelper) {
         super(gen, MOD_ID, exFileHelper);
     }
@@ -26,5 +29,13 @@ public class FFBlockStateProvider extends BlockStateProvider {
         simpleBlock(FFBlockRegistry.NICKEL_BLOCK.get());
         simpleBlock(FFBlockRegistry.SILVER_BLOCK.get());
         simpleBlock(FFBlockRegistry.TIN_BLOCK.get());
+
+        horizontalBlock(FFBlockRegistry.METAL_PRESS.get(),
+                FuturisticFactories.location("block/" + REGISTRY_NAME_METAL_PRESS + "_side"),
+                FuturisticFactories.location("block/" + REGISTRY_NAME_METAL_PRESS + "_side"),
+                FuturisticFactories.location("block/" + REGISTRY_NAME_METAL_PRESS + "_top")
+        );
+
+
     }
 }
