@@ -7,7 +7,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -42,7 +41,7 @@ public class FFRegistration {
         RECIPE_SERIALIZERS.register(modEventBus);
 
         FFBlockRegistry.register();
-        FFItemsRegistry.register();
+        FFItemRegistry.register();
         FFContainerTypeRegistry.register();
         FFTileEntityRegistry.register();
         FFRecipes.register();

@@ -1,0 +1,61 @@
+Crushing	
+1 Ore
+	2 Chunk
+	1 Sand
+	1 Residual 15%
+	
+1 Chunk
+	1 Clump
+	1 Dirty Dust 15%
+	1 Residual 15%
+	
+1 Clump 
+	2 Sand
+	1 Fragment 25%
+	1 Residual 15%
+
+1 Fragment
+	1 Sand 
+	1 Sand 10%
+
+1 Shard 
+	1 Tiny Crystal
+	1 Tiny Crystal 15%
+
+1 Crystal
+	3 Tiny Crystal
+	1 Shard 25%
+	
+Pulverizing
+1 Sand
+	3 Dust
+	1 Residual 15%
+	
+Crystallizing
+2 Dust
+	1 Crystal
+
+Pulverizing
+1 Tiny Crystal 
+	1 Pile
+
+Combining
+4 Pile 
+	1 piece
+
+Smelting
+1 Piece
+	1 Ingot
+	
+Washing
+1 Dirty Dust
+	1 Dust
+	1 Dust 25%
+
+1 Residual
+	1 Dirt 5%
+	1 Gravel 5%
+	1 Sand 5%
+	1 Cobblestone 5%
+	1 Dirty Dust
+

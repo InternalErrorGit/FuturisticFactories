@@ -22,13 +22,11 @@ public class FFRecipes implements IFFRegistryNames {
     public static class Serializers {
         public static final RegistryObject<IRecipeSerializer<PressingRecipe>> PRESSING = FFRegistration.RECIPE_SERIALIZERS.register("pressing", PressingRecipe.Serializer::new);
 
-        public static final RegistryObject<IRecipeSerializer<?>> PRESSING = register("pressing", () ->
-                PressingRecipe.Serializer.(PRESSING_TYPE, PressingRecipe::new));
     }
 
 
     public static void register() {
-        CraftingHelper.register(PRESSING.get());
+
     }
 
 

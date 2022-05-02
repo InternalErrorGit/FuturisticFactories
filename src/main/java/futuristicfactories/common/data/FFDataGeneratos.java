@@ -1,5 +1,6 @@
 package futuristicfactories.common.data;
 
+import futuristicfactories.common.data.lang.FFLanguageProvider;
 import futuristicfactories.common.data.loot.FFLootTableProvider;
 import futuristicfactories.common.data.model.FFItemModelProvider;
 import futuristicfactories.common.data.recipe.FFRecipeProvider;
@@ -31,6 +32,7 @@ public class FFDataGeneratos {
         generator.addProvider(new FFLootTableProvider(generator));
         generator.addProvider(new FFRecipeProvider(generator));
 
+       // generator.addProvider(new FFLanguageProvider(generator, "en_us"));
     }
 
 

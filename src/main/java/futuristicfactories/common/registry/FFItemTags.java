@@ -37,7 +37,6 @@ public class FFItemTags {
     public static final ITag.INamedTag<Item> NUGGETS_SILVER = forge("nuggets/silver");
     public static final ITag.INamedTag<Item> NUGGETS_TIN = forge("nuggets/tin");
 
-
     private static ITag.INamedTag<Item> forge(String path) {
         return ItemTags.makeWrapperTag(new ResourceLocation("forge", path).toString());
     }
