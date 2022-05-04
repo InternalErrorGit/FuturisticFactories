@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "futuristicfactories:item/ore_chunk/silver_ore_chunk"
+  }
+}

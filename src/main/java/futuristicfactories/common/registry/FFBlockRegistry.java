@@ -2,9 +2,12 @@ package futuristicfactories.common.registry;
 
 import futuristicfactories.FuturisticFactories;
 import futuristicfactories.common.IFFMaterial;
-import futuristicfactories.common.block.crushing.CrushingContainer;
+import futuristicfactories.common.block.combining.CombiningMachine;
 import futuristicfactories.common.block.crushing.CrushingMachine;
-import futuristicfactories.common.block.metalpress.MetalPressBlock;
+import futuristicfactories.common.block.crystallizing.CrystallizingMachine;
+import futuristicfactories.common.block.pulverizing.PulverizingMachine;
+import futuristicfactories.common.block.smelting.SmeltingMachine;
+import futuristicfactories.common.block.washing.WashingMachine;
 import futuristicfactories.common.registration.FFRegistration;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -30,8 +33,12 @@ public class FFBlockRegistry implements IFFRegistryNames {
     public static final RegistryObject<Block> SILVER_BLOCK = register(REGISTRY_NAME_SILVER_BLOCK, () -> new Block(IFFMaterial.blockProperties(IFFMaterial.MATERIAL_SILVER_BLOCK)), FUTURISTIC_FACTORIES_TAB_MATERIALS);
     public static final RegistryObject<Block> TIN_BLOCK = register(REGISTRY_NAME_TIN_BLOCK, () -> new Block(IFFMaterial.blockProperties(IFFMaterial.MATERIAL_TIN_BLOCK)), FUTURISTIC_FACTORIES_TAB_MATERIALS);
 
-    public static final RegistryObject<MetalPressBlock> METAL_PRESS = register(REGISTRY_NAME_METAL_PRESS, () -> new MetalPressBlock(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
     public static final RegistryObject<CrushingMachine> CRUSHING_MACHINE = register(REGISTRY_NAME_CRUSHING_MACHINE, () -> new CrushingMachine(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
+    public static final RegistryObject<PulverizingMachine> PULVERIZING_MACHINE = register(REGISTRY_NAME_PULVERIZING_MACHINE, () -> new PulverizingMachine(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
+    public static final RegistryObject<CrystallizingMachine> CRYSTALLIZING_MACHINE = register(REGISTRY_NAME_CRYSTALLIZING_MACHINE, () -> new CrystallizingMachine(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
+    public static final RegistryObject<CombiningMachine> COMBINING_MACHINE = register(REGISTRY_NAME_COMBINING_MACHINE, () -> new CombiningMachine(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
+    public static final RegistryObject<SmeltingMachine> SMELTING_MACHINE = register(REGISTRY_NAME_SMELTING_MACHINE, () -> new SmeltingMachine(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
+    public static final RegistryObject<WashingMachine> WASHING_MACHINE = register(REGISTRY_NAME_WASHING_MACHINE, () -> new WashingMachine(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
 
     public static void register() {
     }

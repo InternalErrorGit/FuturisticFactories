@@ -32,7 +32,7 @@ public class FFDataGeneratos {
         generator.addProvider(new FFLootTableProvider(generator));
         generator.addProvider(new FFRecipeProvider(generator));
 
-       //generator.addProvider(new FFLanguageProvider(generator, "en_us"));
+        generator.addProvider(new FFLanguageProvider(generator, "en_us"));
     }
 
 

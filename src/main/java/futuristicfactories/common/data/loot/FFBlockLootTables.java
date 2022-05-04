@@ -27,8 +27,12 @@ public class FFBlockLootTables extends BlockLootTables {
         registerDropSelfLootTable(FFBlockRegistry.NICKEL_BLOCK.get());
         registerDropSelfLootTable(FFBlockRegistry.SILVER_BLOCK.get());
         registerDropSelfLootTable(FFBlockRegistry.TIN_BLOCK.get());
-        registerDropSelfLootTable(FFBlockRegistry.METAL_PRESS.get());
         registerDropSelfLootTable(FFBlockRegistry.CRUSHING_MACHINE.get());
+        registerDropSelfLootTable(FFBlockRegistry.PULVERIZING_MACHINE.get());
+        registerDropSelfLootTable(FFBlockRegistry.CRYSTALLIZING_MACHINE.get());
+        registerDropSelfLootTable(FFBlockRegistry.COMBINING_MACHINE.get());
+        registerDropSelfLootTable(FFBlockRegistry.SMELTING_MACHINE.get());
+        registerDropSelfLootTable(FFBlockRegistry.WASHING_MACHINE.get());
 
     }
 

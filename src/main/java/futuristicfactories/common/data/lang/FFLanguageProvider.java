@@ -162,6 +162,11 @@ public class FFLanguageProvider extends LanguageProvider implements IFFRegistryN
         addEN_US(FFItemRegistry.TIN_ORE_SHARD.get(), REGISTRY_NAME_TIN_ORE_SHARD);
 
         addEN_US(FFBlockRegistry.CRUSHING_MACHINE.get(), REGISTRY_NAME_CRUSHING_MACHINE);
+        addEN_US(FFBlockRegistry.PULVERIZING_MACHINE.get(), REGISTRY_NAME_PULVERIZING_MACHINE);
+        addEN_US(FFBlockRegistry.CRYSTALLIZING_MACHINE.get(), REGISTRY_NAME_CRYSTALLIZING_MACHINE);
+        addEN_US(FFBlockRegistry.COMBINING_MACHINE.get(), REGISTRY_NAME_COMBINING_MACHINE);
+        addEN_US(FFBlockRegistry.SMELTING_MACHINE.get(), REGISTRY_NAME_SMELTING_MACHINE);
+        addEN_US(FFBlockRegistry.WASHING_MACHINE.get(), REGISTRY_NAME_WASHING_MACHINE);
 
 
         //   add(FFItemRegistry.ALUMINUM_SWORD.get(), REGISTRY_NAME_ALUMINUM_SWORD);

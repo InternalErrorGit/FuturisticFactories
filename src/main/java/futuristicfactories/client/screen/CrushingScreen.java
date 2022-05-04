@@ -4,9 +4,6 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import futuristicfactories.FuturisticFactories;
 import futuristicfactories.common.block.crushing.CrushingContainer;
-import futuristicfactories.common.block.metalpress.MetalPressContainer;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.AbstractGui;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
@@ -24,11 +21,6 @@ public class CrushingScreen extends MachineScreen<CrushingContainer> {
     @Override
     protected ResourceLocation getTexture() {
         return FuturisticFactories.location("textures/gui/crushing_machine.png");
-    }
-
-    @Override
-    protected int getPlayerInventoryYOffset() {
-        return 36;
     }
 
     @Override

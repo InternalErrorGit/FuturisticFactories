@@ -1,4 +1,12 @@
-Crushing	
+Crushing
+Pulverizing
+Crystallizing
+Combining
+Smelting
+Washing
+
+
+Crushing
 1 Ore
 	2 Chunk
 	1 Sand

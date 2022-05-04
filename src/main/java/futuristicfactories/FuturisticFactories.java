@@ -43,7 +43,7 @@ public class FuturisticFactories {
     public static final ItemGroup FUTURISTIC_FACTORIES_TAB_MACHINES = new ItemGroup(MOD_ID) {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(FFBlockRegistry.METAL_PRESS.get());
+            return new ItemStack(FFBlockRegistry.SMELTING_MACHINE.get());
         }
     };
 

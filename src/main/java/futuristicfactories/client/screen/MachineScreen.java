@@ -26,8 +26,6 @@ public abstract class MachineScreen<T extends MachineContainer> extends Containe
 
     protected abstract ResourceLocation getTexture();
 
-    protected abstract int getPlayerInventoryYOffset();
-
     @Override
     protected void drawGuiContainerBackgroundLayer(MatrixStack matrixStack, float partialTicks, int x, int y) {
         if (minecraft == null)
