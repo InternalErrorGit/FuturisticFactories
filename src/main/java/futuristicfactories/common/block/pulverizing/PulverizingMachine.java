@@ -1,11 +1,16 @@
 package futuristicfactories.common.block.pulverizing;
 
 import futuristicfactories.common.block.machine.MachineBlock;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import javax.annotation.ParametersAreNonnullByDefault;
+
+@MethodsReturnNonnullByDefault
+@ParametersAreNonnullByDefault
 public class PulverizingMachine extends MachineBlock {
     public PulverizingMachine(Properties properties) {
         super(properties);

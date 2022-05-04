@@ -1,7 +1,6 @@
 package futuristicfactories.common.block.crushing;
 
 import futuristicfactories.common.block.machine.MachineTileEntity;
-import futuristicfactories.common.block.metalpress.MetalPressContainer;
 import futuristicfactories.common.crafting.recipe.PressingRecipe;
 import futuristicfactories.common.registry.FFTileEntityRegistry;
 import mcp.MethodsReturnNonnullByDefault;

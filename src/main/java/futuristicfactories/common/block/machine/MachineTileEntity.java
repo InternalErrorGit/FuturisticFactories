@@ -1,7 +1,5 @@
 package futuristicfactories.common.block.machine;
 
-import futuristicfactories.common.block.crushing.CrushingTileEntity;
-import futuristicfactories.common.registry.FFTileEntityRegistry;
 import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -33,7 +31,9 @@ import javax.annotation.ParametersAreNonnullByDefault;
 public abstract class MachineTileEntity<RecipeType> extends LockableTileEntity implements ISidedInventory, ITickableTileEntity {
 
     protected static int WORK_TIME = 0;
-
+    protected final int inventorySize;
+    private final LazyOptional<? extends IItemHandler>[] handlers;
+    protected int progress = 0;
     protected final IIntArray fields = new IIntArray() {
         @Override
         public int get(int index) {
@@ -55,18 +55,7 @@ public abstract class MachineTileEntity<RecipeType> extends LockableTileEntity i
             return 1;
         }
     };
-
-    protected int progress = 0;
-
     private NonNullList<ItemStack> items;
-
-    private final LazyOptional<? extends IItemHandler>[] handlers;
-
-    protected final int inventorySize;
-
-    public void encodeExtraData(PacketBuffer buffer) {
-        buffer.writeByte(fields.size());
-    }
 
     public <T extends MachineTileEntity<?>> MachineTileEntity(int inventorySize, TileEntityType<T> tileEntityType) {
         super(tileEntityType);
@@ -74,6 +63,10 @@ public abstract class MachineTileEntity<RecipeType> extends LockableTileEntity i
         items = NonNullList.withSize(inventorySize, ItemStack.EMPTY);
         this.inventorySize = inventorySize;
         setWorkTime();
+    }
+
+    public void encodeExtraData(PacketBuffer buffer) {
+        buffer.writeByte(fields.size());
     }
 
     protected abstract void setWorkTime();
@@ -225,10 +218,6 @@ public abstract class MachineTileEntity<RecipeType> extends LockableTileEntity i
             handler.invalidate();
         }
     }
-
-
-
-
 
 
 }

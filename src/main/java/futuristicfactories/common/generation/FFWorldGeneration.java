@@ -84,9 +84,7 @@ public class FFWorldGeneration {
     public static void generateOre(final BiomeLoadingEvent event) {
         BiomeGenerationSettingsBuilder generation = event.getGeneration();
 
-        ores.forEach(ore -> {
-            generation.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, ore);
-        });
+        ores.forEach(ore -> generation.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, ore));
 
 
     }

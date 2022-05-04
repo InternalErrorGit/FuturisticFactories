@@ -10,6 +10,7 @@ import net.minecraft.inventory.container.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIntArray;
 
+import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 @ParametersAreNonnullByDefault
@@ -17,8 +18,8 @@ import javax.annotation.ParametersAreNonnullByDefault;
 public abstract class MachineContainer extends Container {
 
     private final IInventory inventory;
-    private IIntArray fields;
     private final int inventorySize;
+    private IIntArray fields;
 
 
     protected MachineContainer(int id, PlayerInventory playerInventory, IInventory inventory, IIntArray fields, int inventorySize) {
@@ -35,9 +36,9 @@ public abstract class MachineContainer extends Container {
     }
 
 
+    protected abstract void addInventorySlots(@Nullable IInventory inventory);
 
-    protected abstract void addInventorySlots(IInventory inventory);
-    protected abstract void addPlayerInventorySlots(PlayerInventory playerInventory);
+    protected abstract void addPlayerInventorySlots(@Nullable PlayerInventory playerInventory);
 
     @Override
     public boolean canInteractWith(PlayerEntity player) {

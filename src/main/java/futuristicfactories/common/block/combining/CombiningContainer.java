@@ -5,6 +5,9 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.util.IIntArray;
 
+import javax.annotation.ParametersAreNonnullByDefault;
+
+@ParametersAreNonnullByDefault
 public class CombiningContainer extends MachineContainer {
     protected CombiningContainer(int id, PlayerInventory playerInventory, IInventory inventory, IIntArray fields, int inventorySize) {
         super(id, playerInventory, inventory, fields, inventorySize);

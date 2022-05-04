@@ -21,25 +21,18 @@ public class FuturisticFactories {
     public static final String MOD_ID = "futuristicfactories";
 
     public static final Logger logger = LogManager.getLogger(MOD_ID);
-
-    public static ResourceLocation location(String path) {
-        return new ResourceLocation(MOD_ID, path);
-    }
-
     public static final ItemGroup FUTURISTIC_FACTORIES_TAB_MATERIALS = new ItemGroup(MOD_ID) {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(FFBlockRegistry.COPPER_ORE.get());
         }
     };
-
     public static final ItemGroup FUTURISTIC_FACTORIES_TAB_EQUIPMENT = new ItemGroup(MOD_ID) {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(FFItemRegistry.TIN_INGOT.get());
         }
     };
-
     public static final ItemGroup FUTURISTIC_FACTORIES_TAB_MACHINES = new ItemGroup(MOD_ID) {
         @Override
         public ItemStack createIcon() {
@@ -55,6 +48,10 @@ public class FuturisticFactories {
 
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FFWorldGeneration::generateOre);
 
+    }
+
+    public static ResourceLocation location(String path) {
+        return new ResourceLocation(MOD_ID, path);
     }
 
 }

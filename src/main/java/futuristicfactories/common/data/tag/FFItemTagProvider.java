@@ -1,8 +1,8 @@
 package futuristicfactories.common.data.tag;
 
 import futuristicfactories.common.registry.FFBlockTags;
-import futuristicfactories.common.registry.FFItemTags;
 import futuristicfactories.common.registry.FFItemRegistry;
+import futuristicfactories.common.registry.FFItemTags;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;

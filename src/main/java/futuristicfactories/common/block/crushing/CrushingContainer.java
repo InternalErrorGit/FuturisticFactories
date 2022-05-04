@@ -32,9 +32,6 @@ public class CrushingContainer extends MachineContainer {
         addSlot(new Slot(inventory, 2, 37, 33));
 
 
-
-
-
         addSlot(new Slot(inventory, 1, 116, 35) {
             @Override
             public boolean isItemValid(ItemStack stack) {
@@ -42,7 +39,6 @@ public class CrushingContainer extends MachineContainer {
             }
         });
     }
-
 
 
     @Override

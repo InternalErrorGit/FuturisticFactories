@@ -2,6 +2,7 @@ package futuristicfactories.common.crafting.recipe;
 
 import com.google.gson.JsonObject;
 import futuristicfactories.common.registry.FFRecipes;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipeSerializer;
@@ -15,7 +16,10 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ForgeRegistryEntry;
 
 import javax.annotation.Nullable;
+import javax.annotation.ParametersAreNonnullByDefault;
 
+@MethodsReturnNonnullByDefault
+@ParametersAreNonnullByDefault
 public class PressingRecipe extends SingleItemRecipe {
 
     public PressingRecipe(ResourceLocation recipeId, Ingredient ingredient, ItemStack result) {
