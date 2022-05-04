@@ -1,5 +1,6 @@
 package futuristicfactories.common.registry;
 
+import futuristicfactories.common.block.crushing.CrushingTileEntity;
 import futuristicfactories.common.block.metalpress.MetalPressTileEntity;
 import futuristicfactories.common.registration.FFRegistration;
 import net.minecraft.block.Block;
@@ -12,6 +13,7 @@ import java.util.function.Supplier;
 public class FFTileEntityRegistry implements IFFRegistryNames {
 
     public static final RegistryObject<TileEntityType<MetalPressTileEntity>> METAL_PRESS = register(REGISTRY_NAME_METAL_PRESS, MetalPressTileEntity::new, FFBlockRegistry.METAL_PRESS);
+    public static final RegistryObject<TileEntityType<CrushingTileEntity>> CRUSHING_MACHINE = register(REGISTRY_NAME_CRUSHING, CrushingTileEntity::new, FFBlockRegistry.CRUSHING_MACHINE);
 
     public static void register() {
 

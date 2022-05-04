@@ -2,18 +2,18 @@ package futuristicfactories.client.screen;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
-import futuristicfactories.FuturisticFactories;
-import futuristicfactories.common.block.metalpress.MetalPressContainer;
+import futuristicfactories.common.block.machine.MachineContainer;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 
-public class MetalPressScreen extends ContainerScreen<MetalPressContainer> {
+import javax.annotation.ParametersAreNonnullByDefault;
 
-    public static final ResourceLocation TEXTURE = FuturisticFactories.location("textures/gui/metal_press.png");
+@ParametersAreNonnullByDefault
+public abstract class MachineScreen<T extends MachineContainer> extends ContainerScreen<T> {
 
-    public MetalPressScreen(MetalPressContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
+    public MachineScreen(T screenContainer, PlayerInventory inv, ITextComponent titleIn) {
         super(screenContainer, inv, titleIn);
     }
 
@@ -24,23 +24,16 @@ public class MetalPressScreen extends ContainerScreen<MetalPressContainer> {
         this.renderHoveredTooltip(matrixStack, x, y);
     }
 
+    protected abstract ResourceLocation getTexture();
+
+    protected abstract int getPlayerInventoryYOffset();
+
     @Override
     protected void drawGuiContainerBackgroundLayer(MatrixStack matrixStack, float partialTicks, int x, int y) {
         if (minecraft == null)
             return;
-
-
         RenderSystem.color4f(1, 1, 1, 1);
         RenderSystem.enableBlend();
         RenderSystem.defaultBlendFunc();
-        minecraft.getTextureManager().bindTexture(TEXTURE);
-        int posX = (this.width - this.xSize) / 2;
-        int posY = (this.height - this.ySize) / 2;
-        blit(matrixStack, posX, posY, 0, 0, this.xSize, this.ySize);
-        RenderSystem.disableBlend();
-
-        blit(matrixStack, posX + 79, posY + 35, 176, 14, container.getProgressArrowScale() + 1, 16);
-
     }
-
 }

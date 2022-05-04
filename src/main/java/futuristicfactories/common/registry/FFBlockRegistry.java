@@ -2,6 +2,8 @@ package futuristicfactories.common.registry;
 
 import futuristicfactories.FuturisticFactories;
 import futuristicfactories.common.IFFMaterial;
+import futuristicfactories.common.block.crushing.CrushingContainer;
+import futuristicfactories.common.block.crushing.CrushingMachine;
 import futuristicfactories.common.block.metalpress.MetalPressBlock;
 import futuristicfactories.common.registration.FFRegistration;
 import net.minecraft.block.Block;
@@ -27,7 +29,9 @@ public class FFBlockRegistry implements IFFRegistryNames {
     public static final RegistryObject<Block> NICKEL_BLOCK = register(REGISTRY_NAME_NICKEL_BLOCK, () -> new Block(IFFMaterial.blockProperties(IFFMaterial.MATERIAL_NICKEL_BLOCK)), FUTURISTIC_FACTORIES_TAB_MATERIALS);
     public static final RegistryObject<Block> SILVER_BLOCK = register(REGISTRY_NAME_SILVER_BLOCK, () -> new Block(IFFMaterial.blockProperties(IFFMaterial.MATERIAL_SILVER_BLOCK)), FUTURISTIC_FACTORIES_TAB_MATERIALS);
     public static final RegistryObject<Block> TIN_BLOCK = register(REGISTRY_NAME_TIN_BLOCK, () -> new Block(IFFMaterial.blockProperties(IFFMaterial.MATERIAL_TIN_BLOCK)), FUTURISTIC_FACTORIES_TAB_MATERIALS);
-    public static final RegistryObject<MetalPressBlock> METAL_PRESS = register(REGISTRY_NAME_METAL_PRESS, () -> new MetalPressBlock(IFFMaterial.blockProperties(IFFMaterial.MATERIAL_METAL_PRESS)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
+
+    public static final RegistryObject<MetalPressBlock> METAL_PRESS = register(REGISTRY_NAME_METAL_PRESS, () -> new MetalPressBlock(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
+    public static final RegistryObject<CrushingMachine> CRUSHING_MACHINE = register(REGISTRY_NAME_CRUSHING_MACHINE, () -> new CrushingMachine(IFFMaterial.machineProperties(IFFMaterial.MATERIAL_MACHINE)), FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MACHINES);
 
     public static void register() {
     }

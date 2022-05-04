@@ -36,6 +36,13 @@ public class FFBlockStateProvider extends BlockStateProvider implements IFFRegis
                 FuturisticFactories.location("block/" + REGISTRY_NAME_METAL_PRESS + "_top")
         );
 
+        horizontalBlock(FFBlockRegistry.CRUSHING_MACHINE.get(),
+                FuturisticFactories.location("block/" + REGISTRY_NAME_CRUSHING_MACHINE + "_side"),
+                FuturisticFactories.location("block/" + REGISTRY_NAME_CRUSHING_MACHINE + "_front"),
+                FuturisticFactories.location("block/" + REGISTRY_NAME_CRUSHING_MACHINE + "_top")
+
+        );
+
 
     }
 }

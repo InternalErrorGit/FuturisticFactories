@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "side": "futuristicfactories:block/crushing_machine_side",
+    "front": "futuristicfactories:block/crushing_machine_front",
+    "top": "futuristicfactories:block/crushing_machine_top"
+  }
+}

@@ -34,6 +34,7 @@ public class FFItemModelProvider extends ItemModelProvider implements IFFRegistr
         withExistingParent(REGISTRY_NAME_TIN_BLOCK, modBlockLoc(REGISTRY_NAME_TIN_BLOCK));
 
         withExistingParent(REGISTRY_NAME_METAL_PRESS, modBlockLoc(REGISTRY_NAME_METAL_PRESS));
+        withExistingParent(REGISTRY_NAME_CRUSHING_MACHINE, modBlockLoc(REGISTRY_NAME_CRUSHING_MACHINE));
 
         materialItems(REGISTRY_NAME_ALUMINUM_MATERIAL);
         materialItems(REGISTRY_NAME_COPPER_MATERIAL);
@@ -64,7 +65,6 @@ public class FFItemModelProvider extends ItemModelProvider implements IFFRegistr
         builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_SAND);
         builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_SHARD);
 
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_RESIDUAL);
      //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_SWORD);
      //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_AXE);
      //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_PICKAXE);

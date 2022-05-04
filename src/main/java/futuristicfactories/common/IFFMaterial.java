@@ -20,7 +20,7 @@ public interface IFFMaterial {
     Material MATERIAL_NICKEL_BLOCK = new Material.Builder(MaterialColor.GRAY).build();
     Material MATERIAL_SILVER_BLOCK = new Material.Builder(MaterialColor.GRAY).build();
     Material MATERIAL_TIN_BLOCK = new Material.Builder(MaterialColor.GRAY).build();
-    Material MATERIAL_METAL_PRESS = new Material.Builder(MaterialColor.GRAY).build();
+    Material MATERIAL_MACHINE = new Material.Builder(MaterialColor.GRAY).build();
 
 
     static AbstractBlock.Properties oreProperties(Material material) {
