@@ -49,31 +49,21 @@ public class FFItemModelProvider extends ItemModelProvider implements IFFRegistr
     private void materialItems(String registryNameMaterial) {
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_INGOT);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_NUGGET);
+        builder(itemGenerated, REGISTRY_FOLDER_INGOT + registryNameMaterial + REGISTRY_NAME_INGOT);
+        builder(itemGenerated, REGISTRY_FOLDER_NUGGET + registryNameMaterial + REGISTRY_NAME_NUGGET);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_CHUNK + registryNameMaterial + REGISTRY_NAME_ORE_CHUNK);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_CLUMP + registryNameMaterial + REGISTRY_NAME_ORE_CLUMP);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_CRYSTAL + registryNameMaterial + REGISTRY_NAME_ORE_CRYSTAL);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_TINY_CRYSTAL + registryNameMaterial + REGISTRY_NAME_ORE_TINY_CRYSTAL);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_DUST + registryNameMaterial + REGISTRY_NAME_ORE_DUST);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_DIRTY_DUST + registryNameMaterial + REGISTRY_NAME_ORE_DIRTY_DUST);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_FRAGMENT + registryNameMaterial + REGISTRY_NAME_ORE_FRAGMENT);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_PIECE + registryNameMaterial + REGISTRY_NAME_ORE_PIECE);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_PILE + registryNameMaterial + REGISTRY_NAME_ORE_PILE);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_RESIDUAL + registryNameMaterial + REGISTRY_NAME_ORE_RESIDUAL);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_SAND + registryNameMaterial + REGISTRY_NAME_ORE_SAND);
+        builder(itemGenerated, REGISTRY_FOLDER_ORE_SHARD + registryNameMaterial + REGISTRY_NAME_ORE_SHARD);
 
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_CHUNK);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_CLUMP);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_CRYSTAL);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_TINY_CRYSTAL);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_DUST);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_DIRTY_DUST);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_FRAGMENT);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_PIECE);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_PILE);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_RESIDUAL);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_SAND);
-        builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_ORE_SHARD);
-
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_SWORD);
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_AXE);
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_PICKAXE);
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_SHOVEL);
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_HOE);
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_HELMET);
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_CHESTPLATE);
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_PANTS);
-     //   builder(itemGenerated, registryNameMaterial + REGISTRY_NAME_BOOTS);
     }
 
     private ResourceLocation modBlockLoc(String block) {

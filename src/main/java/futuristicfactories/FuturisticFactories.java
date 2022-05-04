@@ -1,9 +1,10 @@
 package futuristicfactories;
 
-import futuristicfactories.common.generation.WorldGeneration;
+import futuristicfactories.common.generation.FFWorldGeneration;
 import futuristicfactories.common.registration.FFRegistration;
 import futuristicfactories.common.registry.FFBlockRegistry;
 import futuristicfactories.common.registry.FFItemRegistry;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -15,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 
 @Mod(FuturisticFactories.MOD_ID)
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@MethodsReturnNonnullByDefault
 public class FuturisticFactories {
     public static final String MOD_ID = "futuristicfactories";
 
@@ -51,7 +53,7 @@ public class FuturisticFactories {
 
         MinecraftForge.EVENT_BUS.register(this);
 
-        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, WorldGeneration::generateOre);
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FFWorldGeneration::generateOre);
 
     }
 

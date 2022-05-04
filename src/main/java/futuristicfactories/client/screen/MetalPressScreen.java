@@ -9,6 +9,9 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 
+import javax.annotation.ParametersAreNonnullByDefault;
+
+@ParametersAreNonnullByDefault
 public class MetalPressScreen extends ContainerScreen<MetalPressContainer> {
 
     public static final ResourceLocation TEXTURE = FuturisticFactories.location("textures/gui/metal_press.png");

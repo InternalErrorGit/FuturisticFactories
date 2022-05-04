@@ -2,12 +2,14 @@ package futuristicfactories.common.data.loot;
 
 import futuristicfactories.common.registration.FFRegistration;
 import futuristicfactories.common.registry.FFBlockRegistry;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.Block;
 import net.minecraft.data.loot.BlockLootTables;
 import net.minecraftforge.fml.RegistryObject;
 
 import java.util.stream.Collectors;
 
+@MethodsReturnNonnullByDefault
 public class FFBlockLootTables extends BlockLootTables {
 
     @Override
