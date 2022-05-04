@@ -24,8 +24,7 @@ public class CrushingScreen extends MachineScreen<CrushingContainer> {
     }
 
     @Override
-    protected void drawGuiContainerBackgroundLayer(MatrixStack matrixStack, float partialTicks, int x, int y) {
-        super.drawGuiContainerBackgroundLayer(matrixStack, partialTicks, x, y);
+    protected void drawGuiContainer(MatrixStack matrixStack, float partialTicks, int x, int y) {
         assert minecraft != null;
 
         minecraft.getTextureManager().bindTexture(getTexture());

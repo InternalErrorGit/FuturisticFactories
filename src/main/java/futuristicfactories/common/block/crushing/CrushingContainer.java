@@ -19,7 +19,7 @@ public class CrushingContainer extends MachineContainer {
     }
 
     public CrushingContainer(int id, PlayerInventory playerInventory, IInventory inventory, IIntArray fields) {
-        super(id, playerInventory, inventory, fields, 10);
+        super(id, playerInventory, inventory, fields, 13);
     }
 
     @Override

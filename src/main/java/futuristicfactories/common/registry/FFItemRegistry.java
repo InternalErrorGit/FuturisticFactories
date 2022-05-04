@@ -7,7 +7,6 @@ import net.minecraftforge.fml.RegistryObject;
 
 import java.util.function.Supplier;
 
-import static futuristicfactories.FuturisticFactories.FUTURISTIC_FACTORIES_TAB_EQUIPMENT;
 import static futuristicfactories.FuturisticFactories.FUTURISTIC_FACTORIES_TAB_MATERIALS;
 
 public class FFItemRegistry implements IFFRegistryNames {
@@ -142,10 +141,6 @@ public class FFItemRegistry implements IFFRegistryNames {
 
     private static Supplier<? extends Item> materialItem() {
         return item(FUTURISTIC_FACTORIES_TAB_MATERIALS);
-    }
-
-    private static Supplier<? extends Item> equipmentItem() {
-        return item(FUTURISTIC_FACTORIES_TAB_EQUIPMENT);
     }
 
 

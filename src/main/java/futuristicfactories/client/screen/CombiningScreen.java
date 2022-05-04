@@ -1,5 +1,6 @@
 package futuristicfactories.client.screen;
 
+import com.mojang.blaze3d.matrix.MatrixStack;
 import futuristicfactories.FuturisticFactories;
 import futuristicfactories.common.block.combining.CombiningContainer;
 import net.minecraft.entity.player.PlayerInventory;
@@ -14,6 +15,11 @@ public class CombiningScreen extends MachineScreen<CombiningContainer> {
     @Override
     protected ResourceLocation getTexture() {
         return FuturisticFactories.location("textures/gui/combining_machine.png");
+    }
+
+    @Override
+    protected void drawGuiContainer(MatrixStack matrixStack, float partialTicks, int x, int y) {
+
     }
 
 }

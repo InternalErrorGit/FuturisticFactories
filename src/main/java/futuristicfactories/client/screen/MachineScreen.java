@@ -33,5 +33,8 @@ public abstract class MachineScreen<T extends MachineContainer> extends Containe
         RenderSystem.color4f(1, 1, 1, 1);
         RenderSystem.enableBlend();
         RenderSystem.defaultBlendFunc();
+        drawGuiContainer(matrixStack,partialTicks,x,y);
     }
+
+    protected abstract void drawGuiContainer(MatrixStack matrixStack, float partialTicks, int x, int y);
 }

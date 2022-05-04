@@ -3,7 +3,6 @@ package futuristicfactories;
 import futuristicfactories.common.generation.FFWorldGeneration;
 import futuristicfactories.common.registration.FFRegistration;
 import futuristicfactories.common.registry.FFBlockRegistry;
-import futuristicfactories.common.registry.FFItemRegistry;
 import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -27,12 +26,7 @@ public class FuturisticFactories {
             return new ItemStack(FFBlockRegistry.COPPER_ORE.get());
         }
     };
-    public static final ItemGroup FUTURISTIC_FACTORIES_TAB_EQUIPMENT = new ItemGroup(MOD_ID) {
-        @Override
-        public ItemStack createIcon() {
-            return new ItemStack(FFItemRegistry.TIN_INGOT.get());
-        }
-    };
+
     public static final ItemGroup FUTURISTIC_FACTORIES_TAB_MACHINES = new ItemGroup(MOD_ID) {
         @Override
         public ItemStack createIcon() {

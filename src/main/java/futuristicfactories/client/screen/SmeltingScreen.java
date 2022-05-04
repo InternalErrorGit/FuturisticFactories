@@ -1,5 +1,6 @@
 package futuristicfactories.client.screen;
 
+import com.mojang.blaze3d.matrix.MatrixStack;
 import futuristicfactories.FuturisticFactories;
 import futuristicfactories.common.block.smelting.SmeltingContainer;
 import net.minecraft.entity.player.PlayerInventory;
@@ -14,5 +15,10 @@ public class SmeltingScreen extends MachineScreen<SmeltingContainer> {
     @Override
     protected ResourceLocation getTexture() {
         return FuturisticFactories.location("textures/gui/smelting_machine.png");
+    }
+
+    @Override
+    protected void drawGuiContainer(MatrixStack matrixStack, float partialTicks, int x, int y) {
+
     }
 }

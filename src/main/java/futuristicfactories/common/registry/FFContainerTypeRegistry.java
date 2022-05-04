@@ -21,12 +21,12 @@ import net.minecraftforge.fml.network.IContainerFactory;
 public class FFContainerTypeRegistry implements IFFRegistryNames {
 
 
-    public static final RegistryObject<ContainerType<CrushingContainer>> CRUSHING_MACHINE = register(REGISTRY_NAME_CRUSHING_MACHINE, CrushingScreen::new);
-    public static final RegistryObject<ContainerType<PulverizingContainer>> PULVERIZING_MACHINE = register(REGISTRY_NAME_PULVERIZING_MACHINE, PulverizingScreen::new);
-    public static final RegistryObject<ContainerType<CrystallizingContainer>> CRYSTALLIZING_MACHINE = register(REGISTRY_NAME_CRYSTALLIZING_MACHINE, CrystallizingScreen::new);
-    public static final RegistryObject<ContainerType<CombiningContainer>> COMBINING_MACHINE = register(REGISTRY_NAME_COMBINING_MACHINE, CombiningScreen::new);
-    public static final RegistryObject<ContainerType<SmeltingContainer>> SMELTING_MACHINE = register(REGISTRY_NAME_SMELTING_MACHINE, SmeltingScreen::new);
-    public static final RegistryObject<ContainerType<WashingContainer>> WASHING_MACHINE = register(REGISTRY_NAME_WASHING_MACHINE, WashingScreen::new);
+    public static final RegistryObject<ContainerType<CrushingContainer>> CRUSHING_MACHINE = register(REGISTRY_NAME_CRUSHING_MACHINE, CrushingContainer::new);
+    public static final RegistryObject<ContainerType<PulverizingContainer>> PULVERIZING_MACHINE = register(REGISTRY_NAME_PULVERIZING_MACHINE, PulverizingContainer::new);
+    public static final RegistryObject<ContainerType<CrystallizingContainer>> CRYSTALLIZING_MACHINE = register(REGISTRY_NAME_CRYSTALLIZING_MACHINE, CrystallizingContainer::new);
+    public static final RegistryObject<ContainerType<CombiningContainer>> COMBINING_MACHINE = register(REGISTRY_NAME_COMBINING_MACHINE, CombiningContainer::new);
+    public static final RegistryObject<ContainerType<SmeltingContainer>> SMELTING_MACHINE = register(REGISTRY_NAME_SMELTING_MACHINE, SmeltingContainer::new);
+    public static final RegistryObject<ContainerType<WashingContainer>> WASHING_MACHINE = register(REGISTRY_NAME_WASHING_MACHINE, WashingContainer::new);
 
 
     public static void register() {
